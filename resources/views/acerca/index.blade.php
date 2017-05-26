@@ -13,7 +13,7 @@
 		</thead>
 
 		<tbody>
-		<td>1.2.5</td>
+		<td>1.2.6</td>
 		<th>Raúl Palmeros Barrientos</th>
 		<td>raul.180786@gmail.com</td>
 		<td>Producción 1.2</td>
