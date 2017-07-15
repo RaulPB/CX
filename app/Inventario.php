@@ -3,12 +3,20 @@
 namespace CX;
 
 use Illuminate\Database\Eloquent\Model;
+use Carbon\Carbon;
 
 class Inventario extends Model
 {
     protected $table = "inventarios";
-   protected $fillable = ['producto','proveedor_id','precio_prov','precio_pub','porcentaje','stock','recuerdame','status','codigo'];
+   protected $fillable = ['producto','proveedor_id','precio_prov','precio_pub','porcentaje','stock','recuerdame','status','codigo','path'];
 
+   public function setPathAttribute($path){
+     if(!empty($path)){
+     	$this->attributes['path'] = Carbon::now()->second.$path->getClientOriginalName();
+     	$name = Carbon::now()->second.$path->getClientOriginalName();
+     	\Storage::disk('local')->put($name, \File::get($path));
+      }
+     }
 
 
     public function scopeId($query, $producto){ //este es para listar el index en vistas de servicios //FALTA PAREMETRO PARA PASAR ID DE USUARIO

@@ -252,7 +252,7 @@ swal({
                             <a href="#"><i class="fa fa-archive"></i> Inventario<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                <a href="/producto/"><i class='fa fa-cubes'></i> Inventario</a>
+                                <a href="/producto"><i class='fa fa-cubes'></i> Inventario</a>
                                 </li>
                                 <li>
                                 <a href="/producto/create"><i class='fa fa-cube'></i> Nueva entrada Inventario</a>
@@ -360,7 +360,7 @@ swal({
                             <a href="#"><i class="fa fa-archive"></i> Inventario<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                <a href="/producto/"><i class='fa fa-cubes'></i> Inventario</a>
+                                <a href="/producto"><i class='fa fa-cubes'></i> Inventario</a>
                                 </li>
                                 <li>
                                 <a href="/producto/create"><i class='fa fa-cube'></i> Nueva entrada Inventario</a>

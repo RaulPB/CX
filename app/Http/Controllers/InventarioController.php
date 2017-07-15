@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 use CX\Http\Requests;
 use CX\Http\Controllers\Controller;
-
+use Auth;
 use CX\Proveedor;
 use CX\Producto;
 use CX\Inventario;
@@ -65,8 +65,6 @@ class InventarioController extends Controller
       $codigo = $request->input("codigo");
       $prod  = Inventario::where('codigo',$codigo)->get()->first();
 
-
-
       if($prod <> NULL){
         $user = $prod->id;
         Session::flash('notify','El producto ya existe!!');
@@ -83,6 +81,8 @@ class InventarioController extends Controller
             'recuerdame'=>$request['recuerdame'],
             'status'=>$request['status'],
             'codigo'=>$request['codigo'],
+            'path'=>$request['path'],
+            'updated_at'=> \Carbon\Carbon::now(),
         ]);
         Session::flash('msg','');
        return Redirect::to('/producto');
@@ -137,14 +137,32 @@ class InventarioController extends Controller
      */
     public function update(Request $request, $id)
     {
+      $padmin= Auth::user();//->perfil_id == 'Administrador';
+       $idusuario = Auth::user()->id;
        $canti = DB::table('inventarios')->where('id', '=', $id)->pluck('stock');//stock original
        $cantidad2 = $request->input("stock"); //RECUPERAMOS LA NUEVA CANTIDAD QUE INGRESAMOS EN EL FORMULARIO
-       $codigo = $request->input("codigo");//esta sección es para validar que el codigo de barras no este dado 
+       $codigo = $request->input("codigo");//esta sección es para validar que el codigo de barras no este dado
         $codigo2 = DB::table('inventarios')->where('id', '=', $id)->pluck('codigo');
         $preciori = DB::table('inventarios')->where('id', '=', $id)->pluck('precio_prov');;
         $precio_prov = $request->input("precio_prov");//RECUPERAMOS EL PRECIO DEL CAMPO DE TEXTO
-        
-        if($codigo2 == $codigo && $preciori == $precio_prov && $cantidad2 == $canti){ //preguntamos si el codigo de barras existe y si el stock sigue siendo igual o cambio para pasar a la otra evaluación
+
+if(Auth::user()->perfil_id == "Administrador"){//si el usuario es administrador deja reducir inventario
+
+if($codigo2 == $codigo && $preciori == $precio_prov/* && $cantidad2 == $canti*/){ //preguntamos si el codigo de barras existe y si el stock sigue siendo igual o cambio para pasar a la otra evaluación
+    //$user = $prod->id;
+      Session::flash('notify','El producto ya existe!!');
+      return Redirect::to('/producto');
+    }else{
+
+    $prod = Inventario::find($id);
+    $prod->fill($request->all());
+    $prod->save();
+    Session::flash('Notify','Producto Actualizado Correctamente !!!!');
+    return Redirect::to('/producto');
+    }
+
+}else{
+      if($codigo2 == $codigo && $preciori == $precio_prov && $cantidad2 == $canti){ //preguntamos si el codigo de barras existe y si el stock sigue siendo igual o cambio para pasar a la otra evaluación
         //$user = $prod->id;
           Session::flash('notify','El producto ya existe!!');
           return Redirect::to('/producto');
@@ -158,13 +176,16 @@ class InventarioController extends Controller
 
         $prod = Inventario::find($id);
         $prod->fill($request->all());
+      //  $prod->fill($request['path']);
+
         $prod->save();
         Session::flash('Notify','Producto Actualizado Correctamente !!!!');
         return Redirect::to('/producto');
         }
       }
-      return ($codigo);
+      //return ($codigo);
     }
+  }
 
     /**
      * Remove the specified resource from storage.

@@ -43,47 +43,52 @@ $(document).ready(function(){
 
 
 
-	<div class="form-group">
+	<div class="form-group col-md-4">
 		{!!Form::label('Prov','Proveedor:')!!}
 		{!!Form::select('proveedor_id',$prov)!!}
 	</div>
 
-	<div class="form-group">
+	<div class="form-group col-md-12">
 		{!!Form::label('pro','Producto:')!!}
 		{!!Form::text('producto',null,['class'=>'form-control','placeholder'=>'Ingresa nombre de producto a guardar en inventario'])!!}
 	</div>
 
-  <div class="form-group">
+  <div class="form-group col-md-12">
 		{!!Form::label('codig','Codigo de barras:')!!}
 		{!!Form::text('codigo',null,['class'=>'form-control','placeholder'=>'Ingresa codigo de producto a guardar en inventario'])!!}
 	</div>
 
-  <div class="form-group">
+  <div class="form-group col-md-12">
+  {!!Form::label('archivo','Imagen:')!!}
+  {!!Form::file('path')!!}
+</div>
+
+  <div class="form-group col-md-12">
     {!!Form::label('Porc','status del producto:')!!}
     {!!Form::select('status',$status,null,['class'=>'form-control','id'=>'status'])!!}
   </div>
 
-	<div class="form-group">
+	<div class="form-group col-md-12">
 		{!!Form::label('cant','Stock:')!!}
 		{!!Form::number('stock',null,['class'=>'form-control','placeholder'=>'Ingresa cantidad de producto a guardar en inventario'])!!}
 	</div>
 
-	<div class="form-group">
+	<div class="form-group col-md-12">
 		{!!Form::label('pre','Costo proveedor')!!}
 		{!!Form::text('precio_prov',null,['class'=>'form-control','placeholder'=>'Ingresa costo de compra del producto','id'=>'editor1'])!!}
 	</div>
 
-	<div class="form-group">
+	<div class="form-group col-md-12">
 		{!!Form::label('Porc','Porcentaje de ganancia:')!!}
 		{!!Form::select('porcentaje',$porcentaje,null,['class'=>'form-control','id'=>'porce'])!!}
 	</div>
 
-	<div class="form-group">
+	<div class="form-group col-md-12">
 		{!!Form::label('pre','Precio a publico (IVA Incluido):')!!}
 		{!!Form::text('precio_pub',null,['class'=>'form-control','placeholder'=>'Ingresa costo de venta al publico','id'=>'editor2'])!!} <!--ESTE COSTO FINAL SERA CALCULADO SEGUN EL SELECT-->
 	</div>
 
-	<div class="form-group">
+	<div class="form-group col-md-12">
 		{!!Form::label('Provs','¿Recordar?:')!!}
 		{!!Form::select('recuerdame',$rec)!!}
 	</div>
