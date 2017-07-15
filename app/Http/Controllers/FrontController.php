@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use CX\Http\Requests;
 use CX\Http\Controllers\Controller;
 
+
 class FrontController extends Controller
 {
     /**
@@ -91,4 +92,5 @@ class FrontController extends Controller
     {
         //
     }
+
 }
