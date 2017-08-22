@@ -148,8 +148,6 @@ class VentaController extends Controller
         ->select('a.producto as articulo','d.cantidad','d.precio_pub')
         ->where('d.idventa','=', $id)
         ->get();
-
-
         return view('venta.edit',["clientes" => $clientes,"articulos" => $articulos, "status" => $status, "venta" => $venta, "articulos" => $articulos, "detalles" => $detalles]);
         //return("llegue");
     }

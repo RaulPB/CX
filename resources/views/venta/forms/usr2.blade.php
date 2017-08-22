@@ -185,18 +185,9 @@
 
 						subtotal[cont]= yy;//(cantidad * precio_venta);
 
-						//alert("este es el subtotal: " + subtotal[cont]);
-						//alert("este es el valor de variable total de javascript"+ total);
-
 						 var sum = parseFloat(subtotal[cont]) + parseFloat(total) ;
                             var sum2 = sum.toFixed(2);
 						total=parseFloat(total) + parseFloat(subtotal[cont]);
-
-                     //sum = parseFloat(sum);
-                     //  sum =parseFloat(sum).toFixed(3)
-						//alert("este es el nuevo total: "+sum);
-
-
 
 						$("#total_venta2").val(sum2);//mando el TOTAL correcto a la vista para el index
 
