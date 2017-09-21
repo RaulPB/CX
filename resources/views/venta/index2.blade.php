@@ -43,9 +43,9 @@
 
 @section('content')
 
-{!! Form::open(['route' => 'venta.index', 'method' => 'GET', 'class' => 'navbar-form navbar-left pull-right', 'role' => 'search'])!!}
+{!! Form::open(['route' => 'ventas.index', 'method' => 'GET', 'class' => 'navbar-form navbar-left pull-right', 'role' => 'search'])!!}
   <div class="form-group">
-  	{!! Form::text('factura', null, ['class' => 'form-control', 'placeholder' => 'Buscar por factura']) !!} 
+  	{!! Form::text('factura', null, ['class' => 'form-control', 'placeholder' => 'Buscar por factura']) !!}
   </div> <!-- COLOCAMOS ID PORQUE ES LO QUE QUEREMOS FILTRAR-->
   <button type="submit" class="btn btn-default">Buscar</button>
 
@@ -58,9 +58,9 @@
 			<th>Total de venta</th>
 			</thead>
 			@foreach($ventas as $venta)
-		<tbody> 
+		<tbody>
 
-		<?php  
+		<?php
 			$hola=\Carbon\Carbon::now();
 			$hola2=$venta -> created_at;
 			$hola3=$venta -> fecha_limite;
@@ -83,13 +83,13 @@
 							<td bgcolor="#F1C40F">{{$venta -> status}}</td>
 			@endif
 
-			<td>{{$venta -> fecha_limite}}</td> 
+			<td>{{$venta -> fecha_limite}}</td>
 			<td>{{$venta -> total_venta}}</td>
-		
+
 		</tbody>
 			@endforeach
 	</table>
 {!!$ventas->render()!!}
-	
-	
+
+
 @stop
