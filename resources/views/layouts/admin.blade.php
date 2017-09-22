@@ -170,6 +170,9 @@ swal({
                             <li>
                                 <a href="#"><i class='fa fa-money'></i>---Ventas / Cotizaciones</a>
                                      <ul class="nav nav-third-level">
+                                     <li>
+                                         <a href="{!!URL::to('/venta/create')!!}"><i class='fa fa-plus fa-fw'></i> Venta</a>
+                                     </li>
                                 <li>
                                     <a href="{!!URL::to('/venta')!!}"><i class='fa fa-money'></i> Ventas Realizadas (en espera de liquidación)</a>
                                 </li>

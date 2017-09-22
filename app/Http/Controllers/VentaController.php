@@ -101,7 +101,7 @@ class VentaController extends Controller
             }
                 DB::commit();*/
             Session::flash('msg','');
-           return Redirect::to('/ventas');
+           return Redirect::to('/venta');
            // return($cantidad);
     }
 

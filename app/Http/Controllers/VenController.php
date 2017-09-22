@@ -1,21 +1,16 @@
 <?php
-
 namespace CX\Http\Controllers;
-
 use Illuminate\Http\Request;
-
 use CX\Http\Requests;
 use CX\Http\Controllers\Controller;
 use CX\Http\Requests\VentaFormRequest;
 use Session;
 use Redirect;
-
 use CX\Venta;
 use CX\DetalleVenta;
 use CX\Cliente;
 use CX\User;
 use DB;
-
 use Carbon\Carbon;
 use Response;
 use Illuminate\Support\Collection;
@@ -62,7 +57,7 @@ class VenController extends Controller
      */
     public function store(VentaFormRequest $request)
     {
-        
+
            // DB::beginTransaction();
             $venta = new Venta;
             $venta->realizo=$request->get('realizo');
@@ -90,7 +85,7 @@ class VenController extends Controller
                 $detalle->cantidad=$cantidad[$cont];
                 $detalle->precio_pub=$precio_pub[$cont];
                 $detalle->save();
-                $cont = $cont+1;  
+                $cont = $cont+1;
 
             }
                 DB::commit();*/
@@ -182,7 +177,7 @@ class VenController extends Controller
                 $detalle->cantidad=$cantidad[$cont];
                 $detalle->precio_pub=$precio_pub[$cont];
                 $detalle->save();
-                $cont = $cont+1;  
+                $cont = $cont+1;
 
             }
 
