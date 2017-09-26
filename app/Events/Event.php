@@ -1,6 +1,6 @@
 <?php
 
-namespace CX\Events;
+namespace NUMA\Events;
 
 abstract class Event
 {

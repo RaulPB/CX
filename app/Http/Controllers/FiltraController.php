@@ -1,13 +1,13 @@
 <?php
 
-namespace CX\Http\Controllers;
+namespace NUMA\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use CX\Http\Requests;
-use CX\Http\Controllers\Controller;
-use CX\Cliente;
-use CX\Venta;
+use NUMA\Http\Requests;
+use NUMA\Http\Controllers\Controller;
+use NUMA\Cliente;
+use NUMA\Venta;
 use DB;
 
 class FiltraController extends Controller

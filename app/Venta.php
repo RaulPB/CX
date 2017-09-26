@@ -1,16 +1,15 @@
 <?php
 
-namespace CX;
+namespace NUMA;
 
 use Illuminate\Database\Eloquent\Model;
-use CX\Cliente;
+use NUMA\Cliente;
 
 class Venta extends Model
 {
     protected $table = "venta";
     protected $primaryKey='idventa';
     public $timestamps = false;
-
     protected $fillable = ['realizo','cliente_id','fecha_venta','fecha_limite','factura','status','total_venta'];
     protected $guarded = [];
 
@@ -28,13 +27,13 @@ class Venta extends Model
 
        public function clientess()
     {
-        return $this->belongsTo('CX\Cliente', 'cliente_id');//le indico que el cliente_id es la llave con la que
+        return $this->belongsTo('NUMA\Cliente', 'cliente_id');//le indico que el cliente_id es la llave con la que
         //biscar en la tabla de clientes
     }
 
   /*public function clientess() //metodos definidos para mostrar datos relacionados de otras tablas segun el campo que se le especifique; en este case se esta llamando en index de vista usuarios.
      {
-         return $this->hasOne('CX\Cliente');
+         return $this->hasOne('NUMA\Cliente');
      }*/
 
 

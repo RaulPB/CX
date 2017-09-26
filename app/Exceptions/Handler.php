@@ -1,6 +1,6 @@
 <?php
 
-namespace CX\Exceptions;
+namespace NUMA\Exceptions;
 
 use Exception;
 use Illuminate\Database\Eloquent\ModelNotFoundException;

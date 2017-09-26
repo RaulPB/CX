@@ -1,11 +1,11 @@
 <?php
 
-namespace CX\Http\Controllers;
+namespace NUMA\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use CX\Http\Requests;
-use CX\Http\Controllers\Controller;
+use NUMA\Http\Requests;
+use NUMA\Http\Controllers\Controller;
 
 class RealController extends Controller //CONTROLADOR PARA DETERMINAR DINERO REAL EN CAJA DESPUES DE CONTAR SERVICIOS ENTREGADOS A CLIENTE Y VENTAS PAGADAS.
 {

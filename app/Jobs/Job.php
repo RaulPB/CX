@@ -1,6 +1,6 @@
 <?php
 
-namespace CX\Jobs;
+namespace NUMA\Jobs;
 
 use Illuminate\Bus\Queueable;
 

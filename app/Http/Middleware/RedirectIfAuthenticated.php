@@ -1,6 +1,6 @@
 <?php
 
-namespace CX\Http\Middleware;
+namespace NUMA\Http\Middleware;
 
 use Closure;
 use Illuminate\Contracts\Auth\Guard;

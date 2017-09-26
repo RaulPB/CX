@@ -1,9 +1,9 @@
 <?php
 
-namespace CX;
+namespace NUMA;
 
 use Illuminate\Database\Eloquent\Model;
-use CX\Venta;
+use NUMA\Venta;
 
 class Cliente extends Model
 {
@@ -19,11 +19,11 @@ class Cliente extends Model
 
 public function ventas() //metodos definidos para mostrar datos relacionados de otras tablas segun el campo que se le especifique; en este case se esta llamando en index de vista usuarios.
     {
-        return $this->hasOne('CX\Venta');
+        return $this->hasOne('NUMA\Venta');
     }
     /*
     public function ventas()
         {
-            return $this->belongsTo('CX\Venta');
+            return $this->belongsTo('NUMA\Venta');
         }*/
 }

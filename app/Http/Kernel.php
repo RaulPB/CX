@@ -1,6 +1,6 @@
 <?php
 
-namespace CX\Http;
+namespace NUMA\Http;
 
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
@@ -13,11 +13,11 @@ class Kernel extends HttpKernel
      */
     protected $middleware = [
         \Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode::class,
-        \CX\Http\Middleware\EncryptCookies::class,
+        \NUMA\Http\Middleware\EncryptCookies::class,
         \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
         \Illuminate\Session\Middleware\StartSession::class,
         \Illuminate\View\Middleware\ShareErrorsFromSession::class,
-        \CX\Http\Middleware\VerifyCsrfToken::class,
+        \NUMA\Http\Middleware\VerifyCsrfToken::class,
     ];
 
     /**
@@ -26,8 +26,8 @@ class Kernel extends HttpKernel
      * @var array
      */
     protected $routeMiddleware = [
-        'auth' => \CX\Http\Middleware\Authenticate::class,
+        'auth' => \NUMA\Http\Middleware\Authenticate::class,
         'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
-        'guest' => \CX\Http\Middleware\RedirectIfAuthenticated::class,
+        'guest' => \NUMA\Http\Middleware\RedirectIfAuthenticated::class,
     ];
 }

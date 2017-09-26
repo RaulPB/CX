@@ -1,6 +1,6 @@
 <?php
 
-namespace CX\Providers;
+namespace NUMA\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

@@ -1,15 +1,15 @@
 <?php
 
-namespace CX\Http\Controllers;
+namespace NUMA\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use CX\Http\Requests;
-use CX\Http\Controllers\Controller;
+use NUMA\Http\Requests;
+use NUMA\Http\Controllers\Controller;
 
-use CX\Perfil;//IMPORTANTE INCLUIR EL MODELO PARA QUE LO PUEDA LISTAR
-use CX\Sucursal; //IMPORTANTE INCLUIR EL MODELO PARA QUE LO PUEDA LISTAR
-use CX\Proveedor;
+use NUMA\Perfil;//IMPORTANTE INCLUIR EL MODELO PARA QUE LO PUEDA LISTAR
+use NUMA\Sucursal; //IMPORTANTE INCLUIR EL MODELO PARA QUE LO PUEDA LISTAR
+use NUMA\Proveedor;
 use Session;
 use Redirect;
 use Illuminate\Routing\Route; 

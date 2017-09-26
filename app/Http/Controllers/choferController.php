@@ -1,15 +1,15 @@
 <?php
 
-namespace CX\Http\Controllers;
+namespace NUMA\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use CX\Http\Requests;
-use CX\Http\Controllers\Controller;
+use NUMA\Http\Requests;
+use NUMA\Http\Controllers\Controller;
 
-use CX\User;
-use CX\Chofer;
-use CX\Cliente;
+use NUMA\User;
+use NUMA\Chofer;
+use NUMA\Cliente;
 use Session;
 use Redirect;
 use Illuminate\Routing\Route; 

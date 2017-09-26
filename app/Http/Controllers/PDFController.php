@@ -1,15 +1,15 @@
 <?php
 
-namespace CX\Http\Controllers;
+namespace NUMA\Http\Controllers;
 
 use Illuminate\Http\Request;
 use DB;
 use Carbon\Carbon;
-use CX\Http\Requests;
-use CX\Http\Controllers\Controller;
-use CX\Servicio;
-use CX\User;
-use CX\Serv;
+use NUMA\Http\Requests;
+use NUMA\Http\Controllers\Controller;
+use NUMA\Servicio;
+use NUMA\User;
+use NUMA\Serv;
 
 
 

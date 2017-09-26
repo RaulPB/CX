@@ -140,10 +140,10 @@ return [
         /*
          * Application Service Providers...
          */
-        CX\Providers\AppServiceProvider::class,
-        CX\Providers\AuthServiceProvider::class,
-        CX\Providers\EventServiceProvider::class,
-        CX\Providers\RouteServiceProvider::class,
+        NUMA\Providers\AppServiceProvider::class,
+        NUMA\Providers\AuthServiceProvider::class,
+        NUMA\Providers\EventServiceProvider::class,
+        NUMA\Providers\RouteServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
         Barryvdh\DomPDF\ServiceProvider::class,  
         Codecourse\Notify\NotifyServiceProvider::Class,

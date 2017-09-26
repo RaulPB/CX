@@ -1,18 +1,18 @@
 <?php
 
-namespace CX\Http\Controllers;
+namespace NUMA\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use CX\Http\Requests;
-use CX\Http\Controllers\Controller;
+use NUMA\Http\Requests;
+use NUMA\Http\Controllers\Controller;
 use Session;
 use Redirect;
 
-use CX\Cotizacion;
-use CX\DetalleCotizacion;
-use CX\Cliente;
-use CX\User;
+use NUMA\Cotizacion;
+use NUMA\DetalleCotizacion;
+use NUMA\Cliente;
+use NUMA\User;
 use DB;
 
 use Carbon\Carbon;

@@ -1,8 +1,8 @@
 <?php
 
-namespace CX\Http\Controllers\Auth;
+namespace NUMA\Http\Controllers\Auth;
 
-use CX\Http\Controllers\Controller;
+use NUMA\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ResetsPasswords;
 
 class PasswordController extends Controller

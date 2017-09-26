@@ -1,6 +1,6 @@
 <?php
 
-namespace CX\Providers;
+namespace NUMA\Providers;
 
 use Illuminate\Routing\Router;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
@@ -14,7 +14,7 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
-    protected $namespace = 'CX\Http\Controllers';
+    protected $namespace = 'NUMA\Http\Controllers';
 
     /**
      * Define your route model bindings, pattern filters, etc.

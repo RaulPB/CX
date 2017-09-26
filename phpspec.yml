@@ -1,5 +1,5 @@
 suites:
     main:
-        namespace: CX
-        psr4_prefix: CX
+        namespace: NUMA
+        psr4_prefix: NUMA
         src_path: app

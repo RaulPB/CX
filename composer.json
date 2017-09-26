@@ -23,7 +23,7 @@
             "database"
         ],
         "psr-4": {
-            "CX\\": "app/"
+            "NUMA\\": "app/"
         }
     },
     "autoload-dev": {

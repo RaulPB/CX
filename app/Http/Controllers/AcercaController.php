@@ -1,11 +1,11 @@
 <?php
 
-namespace CX\Http\Controllers;
+namespace NUMA\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use CX\Http\Requests;
-use CX\Http\Controllers\Controller;
+use NUMA\Http\Requests;
+use NUMA\Http\Controllers\Controller;
 
 class AcercaController extends Controller
 {

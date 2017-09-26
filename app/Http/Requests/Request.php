@@ -1,6 +1,6 @@
 <?php
 
-namespace CX\Http\Requests;
+namespace NUMA\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace CX\Console\Commands;
+namespace NUMA\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Foundation\Inspiring;

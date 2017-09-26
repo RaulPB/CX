@@ -1,6 +1,6 @@
 <?php
 
-namespace CX;
+namespace NUMA;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -25,7 +25,7 @@ class Cotizacion extends Model
 
       public function clientess()//NO OLVIDAR QUE ESTO LO MOSTRAMOS EN EL INDICE Y NOS PERMITE ALCANZAR UN DATO LEJANO CON SU IDº
     {
-        return $this->belongsTo('CX\Cliente', 'cliente_id');//le indico que el cliente_id es la llave con la que
+        return $this->belongsTo('NUMA\Cliente', 'cliente_id');//le indico que el cliente_id es la llave con la que
         //biscar en la tabla de clientes
     }
 }

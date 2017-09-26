@@ -1,6 +1,6 @@
 <?php
 
-namespace CX;
+namespace NUMA;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -29,12 +29,12 @@ class Serv extends Model
 
           public function status()
     {
-        return $this->belongsTo('CX\Status');
+        return $this->belongsTo('NUMA\Status');
     }
 
     public function clientess()
  {
-     return $this->belongsTo('CX\Cliente', 'cliente_id');//le indico que el cliente_id es la llave con la que
+     return $this->belongsTo('NUMA\Cliente', 'cliente_id');//le indico que el cliente_id es la llave con la que
      //biscar en la tabla de clientes
  }
 }

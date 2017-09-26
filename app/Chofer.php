@@ -1,6 +1,6 @@
 <?php
 
-namespace CX;
+namespace NUMA;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -11,10 +11,10 @@ class Chofer extends Model
 
   public function cliente()
     {
-        return $this->belongsTo('CX\Cliente');
+        return $this->belongsTo('NUMA\Cliente');
     }
     public function chofer()
     {
-        return $this->belongsTo('CX\User');
+        return $this->belongsTo('NUMA\User');
     }
 }

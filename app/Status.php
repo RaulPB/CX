@@ -1,6 +1,6 @@
 <?php
 
-namespace CX;
+namespace NUMA;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -11,6 +11,6 @@ class Status extends Model
 
       public function serv()
     {
-        return $this->hasOne('CX\Serv');
+        return $this->hasOne('NUMA\Serv');
     }
 }

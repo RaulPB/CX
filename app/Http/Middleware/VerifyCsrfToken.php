@@ -1,6 +1,6 @@
 <?php
 
-namespace CX\Http\Middleware;
+namespace NUMA\Http\Middleware;
 
 use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken as BaseVerifier;
 

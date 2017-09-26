@@ -1,6 +1,6 @@
 <?php
 
-namespace CX;
+namespace NUMA;
 
 use Illuminate\Database\Eloquent\Model;
 use Carbon\Carbon;

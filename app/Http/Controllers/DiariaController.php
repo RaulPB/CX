@@ -1,14 +1,14 @@
 <?php
 
-namespace CX\Http\Controllers;
+namespace NUMA\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use CX\Http\Requests;
-use CX\Http\Controllers\Controller;
-use CX\Venta;
+use NUMA\Http\Requests;
+use NUMA\Http\Controllers\Controller;
+use NUMA\Venta;
 use DB;
-use CX\Serv;
+use NUMA\Serv;
 
 class DiariaController extends Controller//CONTROLADOR PARA SACAR LAS VENTAS FACTURADAS Y SRVICIOS REALIZADOS DIARIAMENTE.
 {

@@ -1,15 +1,15 @@
 <?php
-namespace CX\Http\Controllers;
+namespace NUMA\Http\Controllers;
 use Illuminate\Http\Request;
-use CX\Http\Requests;
-use CX\Http\Controllers\Controller;
-use CX\Http\Requests\VentaFormRequest;
+use NUMA\Http\Requests;
+use NUMA\Http\Controllers\Controller;
+use NUMA\Http\Requests\VentaFormRequest;
 use Session;
 use Redirect;
-use CX\Venta;
-use CX\DetalleVenta;
-use CX\Cliente;
-use CX\User;
+use NUMA\Venta;
+use NUMA\DetalleVenta;
+use NUMA\Cliente;
+use NUMA\User;
 use DB;
 use Carbon\Carbon;
 use Response;

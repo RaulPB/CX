@@ -1,15 +1,15 @@
 <?php
 
-namespace CX\Http\Controllers;
+namespace NUMA\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use CX\Http\Requests;
-use CX\Http\Controllers\Controller;
-use CX\Http\Requests\LoginRequest;//utilizado para la validacion de acceso
-use CX\User;
-use CX\Mensaje;
-use CX\Inventario;
+use NUMA\Http\Requests;
+use NUMA\Http\Controllers\Controller;
+use NUMA\Http\Requests\LoginRequest;//utilizado para la validacion de acceso
+use NUMA\User;
+use NUMA\Mensaje;
+use NUMA\Inventario;
 use DB;
 use Redirect;
 use Auth;//utilizado para la validacion de acceso

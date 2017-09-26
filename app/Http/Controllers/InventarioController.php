@@ -1,15 +1,15 @@
 <?php
 
-namespace CX\Http\Controllers;
+namespace NUMA\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use CX\Http\Requests;
-use CX\Http\Controllers\Controller;
+use NUMA\Http\Requests;
+use NUMA\Http\Controllers\Controller;
 use Auth;
-use CX\Proveedor;
-use CX\Producto;
-use CX\Inventario;
+use NUMA\Proveedor;
+use NUMA\Producto;
+use NUMA\Inventario;
 use Session;
 use Redirect;
 use DB;

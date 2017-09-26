@@ -1,8 +1,8 @@
 <?php
 
-namespace CX\Http\Requests;
+namespace NUMA\Http\Requests;
 
-use CX\Http\Requests\Request;
+use NUMA\Http\Requests\Request;
 
 class VentaFormRequest extends Request
 {
